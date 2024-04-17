@@ -1,0 +1,71 @@
+:root {
+    --var-darkblue: #210872;
+    --var-blue: #24559b;
+    --var-lightblue: #5c92ed;
+    --var-grayblue: #cedefb;
+    --var-lightyellow: #fafa9b;
+    --var-yellow: #e0c944;
+    --var-orange: #d99138;
+    --var-salmon: #b14d26;
+    --var-darkred: #801003;
+
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+#svg-container {
+    background-color: transparent;
+}
+
+svg {
+    margin-top: -35px;
+}
+
+#title {
+    font-size: 27px;
+    margin-top: 30px;
+}
+
+#description {
+    font-size: 18px;
+    margin: 5px;
+}
+
+#x-axis {
+    font-size: 12px;
+}
+
+#y-axis {
+    font-size: 11px;
+}
+
+.colorRect {
+    outline: 1px solid black;
+}
+
+#tooltip {
+    text-align: center;
+}
+
+.cell:hover {
+    outline: 3px solid black;
+}
+
+@media screen and (max-width: 768px) {
+    #svg-container {
+        transform: scale(0.8);
+        width: 100%;
+        overflow-x: auto;
+    }
+}
